@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/brands.css">
+    <link rel="stylesheet" href="./assets/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/regular.css">
+    <link rel="stylesheet" href="./assets/css/v5-font-face.css">
+    <link rel="stylesheet" href="About.css">
+</head>
+
+<body>
+
+
+        <div class="navbar">
+            <img src="Cover.jpg" alt="GANG" class="logo">
+
+
+
+            <ul class="links">
+                <li><i class="fa fa-home"></i> <a href="Home.html">Home</a> </li>
+
+                <li> <i class="fa fa-clone"></i> <a href="Services.html"> Services</a>
+
+
+                </li>
+
+                <li class="active"><i class="fa fa-user"> </i> <a href="About.html"> About us</a>
+                </li>
+
+
+                <li  ><i class="fa fa-envelope"></i> <a href="Contact.html"> Contact us</a>
+</li>
+            </ul>
+            
+            <div class="toggle">
+                <i class="fa fa-bars">
+
+                </i>
+            </div>
+
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>  
+        </div>
+
+        <div class="content">
+            <div class="About">
+                <img src="id.jpg" alt="ID photo" class="photo">
+
+                <div class="About-text">
+                    <h1>Lazarus Mphande</h1>
+                    <h5>developer <small> & designer</small> </h5>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                        Nemo, provident, omnis animi aspernatur magnam enim laboriosam <br>
+                         cumque a ex exercitationem facilis, eligendi ea fugiat consequatur <br>
+                          reiciendis quibusdam illum. Eaque, hic. <br>
+                    </p>
+                    <button type="button" id="hire">Hire me</button>
+                </div>
+            </div>
+            
+        </div>
+
+<script>
+
+    const toggleBtn = document.querySelector('.toggle');
+    const toggleBtnIcon = document.querySelector('.toggle i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+            ? 'fa fa-xmark'
+            : 'fa fa-bars'
+    }
+
+</script>
+
+</body>
+
+</html>
